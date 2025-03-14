@@ -1,0 +1,43 @@
+@charset "UTF-8";
+
+body{
+    background-image: url(imagens/wallpaper001.jpg);
+}
+
+header > h1 {
+    color: white;
+    font-weight: bolder;
+    padding: 5px;
+    text-align: center;
+    font-size: 3em;
+    background-color:#CA975E ;
+    border:5px solid rgb(177, 122, 22);
+    text-shadow:5px 6px 4px rgba(0, 0, 0, 0.678);
+   
+}
+
+div.quadrado {
+    border: 1px solid black;
+    width: 300px;
+    height: 300px;
+    display: inline-block;
+    border-radius: 10px;
+    background-color: lightgray;
+}
+
+div#q1{
+   background-color: skyblue;
+}
+
+div#q2{
+    background-image: linear-gradient(to bottom,yellow, red);
+}
+
+div#q3{
+    background-image: url('imagens/pattern001.png');
+}
+
+div#q4{
+   background-image: url(imagens/pattern003.png);
+}
+
