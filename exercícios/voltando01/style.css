@@ -10,11 +10,11 @@
     height: 0px;
 }
 
-html,body{
-    height: 100vh;
+html, body {
+    min-height: 100vh;
     width: 100vw;
-
 }
+
 
 body{
  background-image: linear-gradient(to right, #8A3BBF, #6E37A6, #321659);   
@@ -51,10 +51,9 @@ nav > a:hover {
     color: #1C1240;
 }
 
-main{
-    
-  width: 90vw;
-    height: 100vh;
+main {
+    width: 90vw;
+    min-height: 100vh;
     position: relative;
 }
 
@@ -77,30 +76,61 @@ article>h1 {
     margin-bottom: 14px;
 }
 
-
-iframe > p {
+article > h2 {
     color: white;
+    padding: 10px;
+    margin-left: 4px;
+    font-weight: bold;
+    font-size: 1.7em;
+    background-color: #6E37A6;
+    border-radius: 5px;
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+
+article > p {
+    color: white;
+    font-weight: bolder;
+    background-color: #6E37A6;
+    padding: 2px;
+    font-size: 1.2em;
+}
+
+
+
+iframe#tela {
+    width: 90vw;
+    height: 700px; /* ← altura fixa decente */
+    border: none;
+    margin: auto;
+    display: block;
+    background-attachment: fixed;
+    padding: 25px; 
+    top: 80px;
+    box-shadow:  2px 2px 2px rgba(0, 0, 0, 0.411);
     
 }
 
-iframe {
-    margin-top: 15px;
-    width: 90vw;
-    background-color: #1C1240;
-}
 
-iframe#tela{
-
-    background-attachment: fixed;
-    padding: 25px;
-    height: 850px;
-    margin: auto;
-    border: none; 
-    align-items: center;
-    top: 80px;
-    width: 90vw;
-    height: 90vh;
-    max-width: 100%;
-      
-}
+    iframe {
+        width: 90vw;
+        height: 700px;
+        border: none;
+        margin: auto;
+        display: block;
+        background-attachment: fixed;
+        padding: 25px;
+        box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.438);
+        transition-duration: 0.5s;
+        transition-property: transform, box-shadow; /* adicionei essa linha */
+        border-radius: 15px;
+    }
+    
+    
+    /* animação quando passar o mouse */
+    iframe:hover {
+        transform: scale(1.02); /* aumenta 2% */
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5); /* deixa a sombra maior */
+        border-radius: 15px;
+    }
     
