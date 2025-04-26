@@ -124,6 +124,7 @@ iframe#tela {
         transition-duration: 0.5s;
         transition-property: transform, box-shadow; /* adicionei essa linha */
         border-radius: 15px;
+        margin-bottom: 10px;
     }
     
     
@@ -134,3 +135,51 @@ iframe#tela {
         border-radius: 15px;
     }
     
+    aside{
+        background-color: #6E37A6;
+        padding: 20px;
+        color: white;
+        margin: 10px;
+        text-align: center;
+        margin-top: 16px;
+        margin-bottom: 10px;
+        margin: auto;
+    }
+
+    aside > a {
+        text-decoration: none;
+        color: white;
+        transition-duration: .5s ;
+        padding: 5px;
+        font-weight: bolder;
+        font-size: 1em;
+        margin-top: 20px;
+    }
+
+aside > a > abbr {
+    text-decoration: none;
+}
+
+
+    aside > a:hover{
+        background-color: #1C1240;
+        color: white;
+        text-decoration: none;
+    }
+
+footer {
+  background-color: #1C1240;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1em;
+  text-align: center;
+  padding: 10px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+
+    a {
+        text-decoration: none;
+    }
+
